@@ -16,7 +16,7 @@ public class HelloWorldServlet
       // Lookup the EJB
       helloWorldBean = 
         (HelloWorldRemote) context.lookup(name);
-    } catch(NamingException e) {
+    } catch (NamingException e) {
       throw new ServletException(e);
     }
   }
